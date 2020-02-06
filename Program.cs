@@ -14,6 +14,9 @@ namespace Deliverable_3_Arrays_Cnielsen
             //Declaring ArrayLength as a variable to hold the length of the iterative array
             const int ArrayLength = 25;
 
+            //Declare variable to start array from
+            int Start = 1;
+
             //Declaring the array named as NumberArray
             int[] NumbersArray = new int[ArrayLength];
 
@@ -24,10 +27,12 @@ namespace Deliverable_3_Arrays_Cnielsen
             Console.WriteLine("_________________________________________");
 
             //Executing a for loop to iterate through the array
-            for(int i= 1; i <= ArrayLength ; i++)
-            {             
+            for(int i= 0; i <= ArrayLength - 1 ; i+= 1)
+            {
                 //Display the values in the array
-                Console.WriteLine("Element value =" + " " + i.ToString());
+                NumbersArray[i] = Start;                
+                Console.WriteLine("Element value =" + " " + NumbersArray[i]);
+                Start += 1;
                 
             }//End of for loop
 
